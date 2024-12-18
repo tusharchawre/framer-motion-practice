@@ -42,10 +42,10 @@ function page() {
         <AnimatePresence mode='popLayout' initial={false} >
             <motion.span
             key={buttonState}
-            transition={{duration: 0.3, bounce: 0, type: "spring" }}
-            initial={{y: -20, opacity: 0}}
+            transition={{duration: .3, bounce: 0, type: "spring" }}
+            initial={{y: -10, opacity: 0}}
             animate={{y:0 , opacity: 1}}
-            exit={{opacity:0 , y:20}}
+            exit={{opacity:0 , y:10}}
             >
             {buttonContent[buttonState]}
             </motion.span>
